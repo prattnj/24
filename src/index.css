@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  background-image: linear-gradient(#1a1e1f, black);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.button {
+  @apply bg-green-400 cursor-pointer p-2 f-col text-gray-800 rounded-md
+}
+
+.f-col {
+  @apply flex flex-col
+}
+
+.f-row {
+  @apply flex flex-row
+}
+
+.number {
+  @apply p-2 text-4xl bg-gray-700 rounded-md w-16 h-16 flex flex-col items-center justify-center border-white border-2
+}
